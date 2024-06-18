@@ -1,0 +1,51 @@
+<!--/*
+Sean Diaz 6/10/24
+HW4 P1 Wenjin Zhou GUI PROGRAMMING
+index.html
+
+In hindsight this may have changed quite a bit from its final form in part 2.
+
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <h1>Sean Diaz's Dynamic Multiplication Table</h1>
+    <form id="tableForm">
+        <div id="inputContainer">
+            <label for="startRow">Start Row:</label>
+            <input type="number" id="start_Row" name="start_Row" required><br>
+            <div id="start_Row_slider"></div><br>
+
+            <label for="endRow">End Row:</label>
+            <input type="number" id="end_Row" name="end_Row" required><br>
+            <div id="end_Row_slider"></div><br>
+
+            <label for="startCol">Start Column:</label>
+            <input type="number" id="start_Col" name="start_Col" required><br>
+            <div id="start_Col_slider"></div><br>
+
+            <label for="endCol">End Column:</label>
+            <input type="number" id="end_Col" name="end_Col" required><br>
+            <div id="end_Col_slider"></div><br>
+
+            <button type="submit">Generate Table</button>
+        </div>
+    </form>
+    <div id="notification"></div>
+    <div id="tabs">
+        <ul></ul>
+    </div>
+    <div id="tableContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>

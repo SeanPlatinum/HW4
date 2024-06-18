@@ -1,0 +1,95 @@
+/* Sean Diaz - HW4 - Wenjin Zhou GUI PROGRAMMING 
+6/11/24
+sean_diaz@student.uml.edu */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#inputContainer {
+    width: 200px; /* Adjust width as needed */
+    margin-right: 20px; /* Space between input container and table container */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+}
+
+input {
+    margin-bottom: 5px;
+    width: 100%; /* Make input take full width of the container */
+    padding: 3px; /* Adjust padding if needed */
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    width: 100%; /* Make button take full width of the container */
+}
+
+#mainContainer {
+    display: flex;
+    align-items: flex-start; /* Align input and table containers to the top */
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures there are no double borders */
+    border: 1px solid #000; /* Add border around the table */
+}
+
+th, td {
+    border: 1px solid #000; /* Add black border for each cell */
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+    top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #f6f1f1; /* Stylish opposite */
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+#notification {
+    color: red;
+    width: calc(100% - 220px); /* Adjust width based on input container width */
+}
+
+.ui-tabs .ui-tabs-nav li .ui-icon-close {
+    float: left;
+    margin: 0.4em 0.2em 0 0;
+    cursor: pointer;
+}
+
+/* Slider styles */
+#start_Row_slider, #end_Row_slider, #start_Col_slider, #end_Col_slider {
+    width: 100%; /* Match the input box size */
+    margin-bottom: 10px;
+}
+#tableContainer {
+    overflow: auto;
+    max-height: 200px; /* So it doesn't take up the whole screen */
+    border: 1px solid #000; /* Add border around the table container */
+}
